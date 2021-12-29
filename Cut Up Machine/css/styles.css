@@ -1,0 +1,243 @@
+@font-face{
+  font-family:"OpenSans";
+  src:url(../fonts/OpenSans.ttf);
+}
+
+@font-face{
+  font-family:"JosefinSans";
+  src:url(../fonts/JosefinSans.ttf);
+}
+
+@font-face{
+  font-family:"OpenSans-Bold";
+  src:url(../fonts/OpenSans-Bold.ttf);
+}
+
+body {
+ 
+  margin: 0;
+  background-color: #0f4c75;
+}
+h1 { 
+  font-family: "JosefinSans"; 
+  font-size: 34px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 700; 
+  line-height: 26.4px; 
+  color: #FDFFFC;
+  text-align: center;
+}
+p {
+  font-family: "OpenSans"; 
+  color: #FDFFFC;
+}
+
+/* unvisited link */
+a:link {
+  color: #71c9ce;
+}
+
+/* visited link */
+a:visited {
+  color: #a6e3e9;
+}
+
+/* mouse over link */
+a:hover {
+  color: #cbf1f5;
+}
+
+/* selected link */
+a:active {
+  color: #e3fdfd;
+}
+
+a{
+	font-family: "OpenSans";
+}
+
+
+.content{
+  text-align: justify;
+  
+}
+#drop_zone {
+  padding: 24px;
+  border-style: dashed;
+  border-radius: 31px;
+  width: 92%;
+  
+}
+/* output */
+.text {     
+  
+  padding: 20px;
+  width: 850px;
+  margin: 0 auto;
+  text-align: justify;
+  
+}
+
+.container-100{
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #1b262c;
+}
+
+.wrap-100{
+  width: 850px;
+  background: transparent;
+  padding: 50px 0px 160px 0px;
+}
+
+.wrap-input100 {
+  width: 100%;
+  background-color: #011627;
+  border-radius: 31px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+#textinput {
+  position: relative;
+  display: block;
+  width: 90%;
+  background: #fff;
+  border-radius: 31px;
+  font-family: OpenSans;
+  font-size: 18px;
+  color: #8f8fa1;
+  line-height: 1.2;
+
+  min-height: 150px;
+  padding: 19px 35px 0 35px;
+}
+
+textarea.input {
+  min-height: 169px;
+  padding: 19px 35px 0 35px;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+
+
+
+#loadsamplepoem,#loadsamplestory,#cutUpByWords,#cutUpBySentence,#cutUpByWordsLines,#cutUpByLines,#clear{
+
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 120px;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 31px;
+  border: transparent;
+  margin: 1em;
+
+  font-family: OpenSans-Bold;
+  font-size: 11px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+
+}
+
+#loadsamplepoem::before,#loadsamplestory::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #2a4158;
+  pointer-events: none;
+  border: transparent;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#clear::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #00539CFF;
+  pointer-events: none;
+  border: transparent;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#cutUpByWords::before,#cutUpBySentence::before,#cutUpByWordsLines::before,#cutUpByLines::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #0f4c75;
+  pointer-events: none;
+  border: transparent;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#loadsamplepoem:hover:before,#loadsamplestory:hover:before,#cutUpByWords:hover:before,#cutUpBySentence:hover:before,#cutUpByWordsLines:hover:before,#cutUpByLines:hover:before,#clear:hover:before{
+  background-color: #bbe1fa;
+  width: calc(100% + 20px);
+  border: transparent;
+}

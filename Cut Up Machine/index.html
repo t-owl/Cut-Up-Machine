@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Cut-up Machine</title>
+      <link rel="stylesheet" href="css/styles.css" />
+      <script src="libraies/p5.js"></script>
+      <script src="js/sketch.js"></script>
+      <script src="js/cutup.js"></script>
+   </head>
+   <body>
+      <div class="container-100">
+         <div class="wrap-100">
+            <h1>Cut up Machine</h1>
+            <div class="content">
+               <p>
+                  In an attempt to minimize the influence of conscious control on creativity, 
+                  Surrealist writers (Andre Breton, Tristan Tzara, Guillaume Apollinaire etc) 
+                  investigated the technique now known as decoupe (or "cut up") in order to 
+                  generate literary works. The same approach was later adopted by the American
+                  writer William Burroughs who (with Brion Gysin) went on to explore the 
+                  related "fold-in" approach to automatism. These approaches are especially 
+                  well suited to poetry
+               </p>
+               <a href="https://en.wikipedia.org/wiki/Cut-up_technique" target="_blank">More information on the cut up Machine</a> 
+               <p>
+                  In this project the idea of human interaction in creative writing will
+                  be challenge, by applying the decoupe technique to a source text. And
+                  generating a new piece of literature.<br/><br/>
+               </p>
+               <p>
+                <strong>1.</strong> Input a text by dragging a file, pasting a text or typing.  <br/>
+                <strong>2.</strong> Click on one of the cut-up by buttons. <br/>
+                <strong>3.</strong> Your cut up text will be right below.<br/><br/>
+                <strong>Cut-up by words:</strong> Divides the text into words and then shuffles the words.  <br/>
+                <strong>Cut-up by sentences:</strong> Divides the text into sentences and then shuffles the sentences. <br/>
+                <strong>Cut-up by words with paragraphs:</strong> Divides the text into words and then shuffles the words but also keeps a paragraph structure.<br/>
+                <strong>Cut-up by paragraphs:</strong> Divides the text into paragraphs and then shuffles the paragraphs.<br/><br/>
+                If you don't come up with anything you can use the Sample buttons:
+             </p>
+            </div>
+            <p>
+               <button id="loadsamplepoem">Use sample poem</button>
+               <button id="loadsamplestory">Use sample story</button>
+            </p>
+            <p id ="drop_zone">
+               Drag your file here
+            </p>
+            <p></p>
+            <textarea id = "textinput" rows="10" placeholder="Enter some text"></textarea>
+            <br/>
+            <button id = "cutUpByWords">cut-up by words</button>
+            <button id = "cutUpBySentence">cut-up by sentences</button>
+            <button id = "cutUpByWordsLines">cut-up by words with paragraphs</button>
+            <button id = "cutUpByLines">cut-up by paragraphs</button>
+            <button id = "clear">clear</button>
+            
+         </div>
+      </div>
+   </body>
+</html>
